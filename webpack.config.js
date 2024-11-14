@@ -1,6 +1,6 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
-const path = require("path");
+const path = require('path');
 
 const config = {
   entry: "./mdx/index.js",
@@ -24,7 +24,6 @@ const config = {
     extensions: [".js", ".mdx"],
   },
 };
-
 module.exports = () => {
   config.mode = "production";
   return config;

@@ -1,6 +1,6 @@
 import * as webpack from "webpack";
 import path from "path";
-import { bundleMDX } from "@puzzlet/templatedx";
+import { parse } from "@puzzlet/templatedx";
 import fs from "fs";
 
 export default async function promptdxLoader(
@@ -10,7 +10,7 @@ export default async function promptdxLoader(
   const callback = this.async();
   const baseDir = path.dirname(this.resourcePath);
   try {
-    const ast = await bundleMDX(content, baseDir, async (modulePath) => {
+    const ast = await parse(content, baseDir, async (modulePath) => {
       const content = await fs.promises.readFile(modulePath, 'utf-8');
       return content;
     });
