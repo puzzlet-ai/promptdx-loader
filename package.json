@@ -1,6 +1,6 @@
 {
   "name": "@puzzlet/promptdx-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom webpack loader for promptdx",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
