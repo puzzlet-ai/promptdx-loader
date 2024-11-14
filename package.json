@@ -1,5 +1,5 @@
 {
-  "name": "my-webpack-project",
+  "name": "@puzzlet/promptdx-loader",
   "version": "1.0.0",
   "description": "A custom webpack loader for promptdx",
   "main": "dist/index.js",
