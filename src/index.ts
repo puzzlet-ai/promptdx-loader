@@ -3,7 +3,7 @@ import path from "path";
 import { parse } from "@puzzlet/templatedx";
 import fs from "fs";
 
-export default async function promptdxLoader(
+async function promptdxLoader(
   this: webpack.LoaderContext<{}>,
   content: string
 ) {
@@ -21,3 +21,5 @@ export default async function promptdxLoader(
     return callback(error);
   }
 }
+
+module.exports = promptdxLoader;
