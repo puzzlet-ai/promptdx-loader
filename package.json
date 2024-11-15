@@ -11,6 +11,7 @@
     "changeset": "changeset",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
+    "release": "changeset publish",
     "watch": "webpack --watch"
   },
   "devDependencies": {
